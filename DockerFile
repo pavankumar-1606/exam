@@ -1,0 +1,4 @@
+FROM openjdk:17-jdk-slim
+WORKDIR /app
+COPY target/apartment-management.jar /app/apartment-management.jar
+CMD ["java", "-jar", "/app/apartment-management.jar"]
